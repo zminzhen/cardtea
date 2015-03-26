@@ -1,0 +1,53 @@
+<div class="tea-wrap">
+	<section class="guaguaka">
+	<!-- 刮奖区域 Start -->
+	<h2><a href="#page4" style="color:#000">提交信息</a></h2>
+		<div class="card-wrp">
+			
+			<div class="card-hd">
+				<span class="people-num">已有{{=it.number}}人参与</span>
+				<span class="share "></span>
+				<img src="images/done.png"/>
+				<p class="congrats">恭喜您，回答正确！<br/>获得一次刮奖机会哦~</p>
+			</div>
+			<div class="e-wrap">
+				<p class="result"></p>
+				<img src="images/card.png" class="maskImg"/>
+			</div>
+			
+		</div>
+	<!-- 刮奖区域 End -->
+	</section>
+	<section class="rule-wrap">
+		<div class="rule-text">
+			<h3>活动规则</h3>
+			<p>{{=it.ruleText}}</p>
+		</div>
+		<div class="rule-img">
+			<img src="{{=it.awardsImg}}"/>
+
+		</div>
+	</section>
+	
+	<section class="dialog-wrp">
+	<!-- 提示信息 Start-->
+	<div class="dialog" style="display:none">
+		<img src=""/>
+		<div class="dynamicHtml">
+		</div>
+		<div class="reminder">
+			<p>友情提示：<br/>
+			{{=it.submitTips}}
+			</p>
+		</div>
+		<a class="submit-info" href="#page4">
+			<span>填写领奖资料</span>
+		</a>
+		<i class="close"></i>
+	</div>
+	<!-- 提示信息 End-->
+	</section>
+	
+</div>
+<div class="card-mask" style="display:none"></div>
+<script type="text/javascript" src="js/guaka.js"></script>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第${episode}期 - 单词下午茶</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+        <meta name="keywords" content="单词下午茶，第${episode}期，网易有道，有道学堂"/>
+        <meta name="description" content="单词下午茶第${episode}期"/>
+        <link href="http://shared.ydstatic.com/xue/icon/favicon.ico" type="image/x-icon" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" charset="utf-8" href="http://shared.youdao.com/dict/luna_comments/vote/v0.1.0.1/css/style.min.css">
+        <link rel="stylesheet" href="http://shared.ydstatic.com/xue/special/tea_test/css/scene.css">
+		<link rel="stylesheet" href="http://shared.ydstatic.com/xue/special/tea_test/css/cardtea.css">
+		<link rel="stylesheet" href="http://shared.ydstatic.com/xue/special/tea_test/css/share_style.css">
+    </head>
+
+    <body>
+    	<div class="scene" id="page1">
+    	<div class="index-wrap">
+		    <div class="header"><img src="http://shared.ydstatic.com/xue/special/tea_test/images/banner.jpg" alt="单词下午茶"/></div>
+            <!-- 播放器 Start -->
+            <div id="player" class="player">
+                <div class="video-play-btn">
+                    <img alt="videoimg" src="${video_m_pic}" class="videoimg"/>
+                    <script type="text/video-template">
+                    <video align="center" width="100%"  src="${video_m}" controls="controls" ></video>
+                    </script>
+                </div>
+          		<div class="nav">
+                    <a href="javascript:void(0)" class="f-answer" ><ins></ins>答题获奖</a>
+                    <span class="share"></span>
+                    <span id="lunaVote" data-pid="92930">
+                        <span id="like" class="vote-up">
+                            <ins></ins>
+                            <span class="like-count num">1200</span>
+                        </span>
+                    </span>
+                    <a class="comments-btn" href="javascript:" data-rel='external'><ins></ins>回帖</a>
+                </div>
+            </div>
+            <!-- 播放器 End -->
+            <!-- 单词日历 Start -->
+        	<div class="words-calendar-wrp">
+        		<div class="btn-left"><img src="http://shared.ydstatic.com/xue/special/tea_test/images/btn_left.png"/></div>
+        		<div class="words-slide">
+            		<ul class="words-ul">
+						
+					</ul>
+				</div>
+
+				<div class="btn-right"><img src="http://shared.ydstatic.com/xue/special/tea_test/images/btn_right.png"/></div>
+        	</div>
+            <!-- 单词日历 End -->
+			<div class="words-review">
+				<h3><span>知识点回顾</span><img src="http://shared.ydstatic.com/xue/special/tea_test/images/review.png" /></h3>
+				<p>【释义】${definition}</p>
+				<#list examples as example >
+	                <p>【例句】${example.zh}</p>
+					<p>${example.wrong}</p>
+					<p>${example.correct}</p>
+	            </#list>
+			</div>
+			<div class="subtitle">
+				<h3><span>完整字幕</span><img src="http://shared.ydstatic.com/xue/special/tea_test/images/subtitle.png" /></h3>
+				<p class="">${subtitle}</p>
+				<span class="more">全部</span>
+			</div>
+			<a href="#" class="ad">
+                <img src="${ad}" alt="">
+            </a>
+            <!-- 相关视频 and主持人介绍 Start -->
+            <div id="video-history">
+				<#list histories as history >
+                    <a  style="<#if history_index gt 2 >display:none</#if>" class="history-item" href= "${history.link}">
+                        <img src="${history.img}" alt="第一期" />
+                        <span>${history.episode}</span>
+                    </a>
+                </#list>
+               
+            </div>
+            <div class="host-intro">
+	            <div class="zhuchi">
+                    <#list hosts as host>
+                    <div class="people">
+                        <img src="${host.img}" alt="">
+                        <p>${host.name}</p>
+                    </div>
+                   </#list>
+                </div>
+	            <h3>主持人介绍</h3>
+               <#list hosts as host>
+                <p class="des">${host.name}<br>${host.intro}</p>
+                <p> </p>
+            	</#list>
+            </div>
+            <!-- 相关视频 and主持人介绍 End -->
+			<div class="xue-logo">
+				<img src="http://shared.ydstatic.com/xue/special/tea_test/images/xue_logo.png"/>
+			</div>
+            <script id="lunaCommentInit" async="async" data-pid="${comments_key}" charset="utf-8" src="http://shared.ydstatic.com/dict/luna_comments/v0.1.2/scripts/comments.min.js"></script>
+        </div>
+    	</div>
+
+		<script src="http://shared.ydstatic.com/js/zepto/zepto-1.1.4.min.js"></script>
+        <script>
+        var cardtea ={ 
+			id : "${episode_id?js_string}",
+			question :"${question?js_string}",
+			options : [<#list options as option>
+				"${option}",
+			</#list>],
+			rightOption : "${rightOption?js_string}",
+			ruleText : "${rule_text?js_string}",
+			awardsImg : '${awards_img?js_string}',
+			prize :[ 
+				<#list prizes as prize>
+                     { img :"${prize.prize_img?js_string}",
+                       text :"${prize.prize_text}"
+                     },
+                </#list>
+				
+			],
+			submitTips: "${awards_tips}"
+			//prize必须按照顺序:特等奖/1/2/3等奖
+		};
+        console.log(cardtea);
+        /** 设置分享数据 */
+        var shareData = {
+            title: "${share_title?js_string}",
+            desc: "${share_desc}?js_string",
+            img : "${share_img?js_string}",
+            wtitle: "${share_desc?js_string}",
+            link: location.href,
+            imgUrl: "${share_img?js_string}",
+            success: function () {},
+            cancel: function () {}
+        };
+        </script>
+        <script id="tmpl" type="text/html">
+            <section id="sharePanel">
+                <div id="weixinTip"></div>
+                <div class="wrap">
+                    <div class="title">分享给好友</div>
+                    <div class="share">
+                        {{?it.weibo}}
+                        <a id="sina" data-rlog="sina" data-type="sina" href="javascript:void(0);"><i></i>新浪微博</a>
+                        {{?}}
+                        {{?it.weixin}}
+                        <a id="weixin" data-rlog="weixin" data-type="weixin" href="javascript:void(0);"><i></i>微信</a>
+                        {{?}}
+                        {{?it.yixin}}
+                        <a id="yixin" data-rlog="yixin" data-type="yixin" href="javascript:void(0);"><i></i>易信</a>
+                        {{?}}
+                    </div>
+                    <a id="cancel" href="javascript:void(0);">取消</a>
+                </div>
+            </section>
+        </script>
+        <script src="http://shared.ydstatic.com/market/laowai/js/vote.min.js"></script>
+        <!-- 微信jssdk分享代码 -->
+        <script charset="utf-8" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script charset="utf-8" src="http://zhushou.corp.youdao.com/api/wxauth"></script>
+        <script src="http://shared.youdao.com/yd/common-login/yd.account.login.js?v=20150324-1"></script>
+
+        <script src="http://shared.ydstatic.com/xue/special/tea_test/js/index.js"></script>
+    </body>
+</html>

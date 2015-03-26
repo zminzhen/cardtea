@@ -1,0 +1,21 @@
+<style>
+	.q-tit h3{ line-height:100%; vertical-align: middle;}
+</style>
+<div class="tea-wrap">
+	<div class="q-question">
+		<div class="q-tit"><h3>{{=it.word}}在这里的解释为？</h3></div>
+		<ul class="q-answer">
+			{{~it.options :value:index}}
+				<li><a href="javascript:">{{=value}}</a></li>
+			{{~}}
+		</ul>
+		<p class="rid">2</p>
+	</div>
+	<div class="q-false">
+		<h3 class="q-tit">正确的答案是</h3>
+		<h4></h4>
+		<img src="http://shared.ydstatic.com/xue/special/tea_test/images/sad_tou.png"/>
+		<p>别桑心，下期继续努力！</p>
+	</div>
+</div>
+<script src="js/question.js"></script>

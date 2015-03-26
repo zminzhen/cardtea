@@ -1,0 +1,30 @@
+
+
+
+	<div class="tea-wrap">
+		<section class=" address">
+			<h4>填写详细资料，以便我们为您寄送奖品</h4>
+			<li><i>姓名：</i><input type="text" name="userName" value="" ></li>
+			<li><i>电话：</i><input type="text" name="userPhone" value="" ></li>
+			<li class="area"><i>地址：</i><textarea   name="userAddress" value=""></textarea></li>
+			<p>请仔细检查信息再提交哦，地址务必注明<span>省份、城市、区县、街道、小区、门牌号</span>等。</p>
+		<form action="http://nc008x.corp.youdao.com:28085/course/cardtea/address.json" method="post" target="pframe">
+			<input type="text" name="lesson"  value="1">
+			<input type="text" name="json"  value="">
+			<input class="subData" type="submit" value="提交">
+		</form>
+		<iframe src="about:blank" name="pframe" class="pframe"></iframe>
+		</section>
+		<section class="success">
+			<h3>提交成功</h3>
+			<p>在家等着我们的奖品叭！</p>
+			<div class="reminder">
+				
+				<p>友情提示：<br/>
+				{{=it.submitTips}}
+				</p>
+			</div>
+		</section>
+	</div>
+<script type="text/javascript" src="js/address.js"></script>
+

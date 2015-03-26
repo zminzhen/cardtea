@@ -1,0 +1,1099 @@
+* {
+	tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu {
+	margin: 0;
+	padding: 0
+}
+
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details {
+	display: block
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+caption,th {
+	text-align: left;
+	font-weight: normal
+}
+
+html,body,fieldset,img,iframe,abbr {
+	border: 0
+}
+
+i,cite,em,var,address,dfn {
+	font-style: normal
+}[hidefocus],summary {
+	outline: 0
+}
+
+li {
+	list-style: none
+}
+
+h1,h2,h3,h4,h5,h6,small {
+	font-size: 100%
+}
+
+sup,sub {
+	font-size: 83%
+}
+
+pre,code,kbd,samp {
+	font-family: inherit
+}
+
+q:before,q:after {
+	content: none
+}
+
+textarea {
+	overflow: auto;
+	resize: none
+}
+
+label,summary {
+	cursor: default
+}
+
+a,button {
+	cursor: pointer
+}
+
+body,textarea,input,button,select,keygen,legend {
+	outline: 0
+}
+
+body {
+	background: #fff
+}
+
+a,a:hover {
+	color: #fff
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+*,*:before,*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: content-box;
+	box-sizing: border-box
+}
+
+input,textarea,select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit
+}
+
+button,input[type="button"],input[type="reset"],input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button
+}
+
+button[disabled],input[disabled] {
+	cursor: default
+}
+
+img {
+	image-rendering: optimizeQuality;
+	-ms-interpolation-mode: bicubic
+}
+
+lable {
+	cursor: pointer
+}
+
+a {
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none
+}
+
+li {
+	list-style: none
+}
+
+@media all and (min-width:640px) {
+	html {
+		font-size: 625%
+	}
+}
+
+@media all and (max-width:640px) {
+	html {
+		font-size: 625%
+	}
+}
+
+@media all and (max-width:604px) {
+	html {
+		font-size: 589.84375%
+	}
+}
+
+@media all and (max-width:600px) {
+	html {
+		font-size: 585.9375%
+	}
+}
+
+@media all and (max-width:540px) {
+	html {
+		font-size: 527.34375%
+	}
+}
+
+@media all and (max-width:534px) {
+	html {
+		font-size: 521.484375%
+	}
+}
+
+@media all and (max-width:480px) {
+	html {
+		font-size: 468.75%
+	}
+}
+
+@media all and (max-width:424px) {
+	html {
+		font-size: 414.0625%
+	}
+}
+
+@media all and (max-width:400px) {
+	html {
+		font-size: 390.625%
+	}
+}
+
+@media all and (max-width:384px) {
+	html {
+		font-size: 375%
+	}
+}
+
+@media all and (max-width:360px) {
+	html {
+		font-size: 341.5625%
+	}
+}
+
+@media all and (max-width:320px) {
+	html {
+		font-size: 312.5%
+	}
+}
+
+body {
+	background-color: #fcf5e2;
+	font-family: Droid Sans,Droid Sans Fallback,Helvetica;
+	-webkit-user-select: none;
+	user-select: none;
+	-ms-touch-action: none
+}
+
+img {
+	width: 100%
+}
+
+.tea-wrap {
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/bg.jpg) no-repeat;
+	background-size: 100% auto;
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 1rem
+}
+
+.index-wrap {
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	position: relative
+}
+
+.player {
+	width: 100%;
+	overflow: hidden;
+	margin-top: -30%;
+	color: #fff;
+	font-size: 12px;
+	padding: 15px
+}
+
+.video-play-btn {
+	background-color: black
+}
+
+video {
+	background: #000
+}
+
+.nav {
+	width: 100%;
+	padding: 8px 5px;
+	background-color: #52b058;
+	color: #fff;
+	font-size: 14px;
+	position: relative;
+	text-align: right;
+	overflow: hidden;
+	margin-top: -4px;
+	line-height: 20px
+}
+
+
+
+.nav .comments-btn,.nav .vote-up,.nav .share {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+	line-height:25px;
+}
+
+.nav .share {
+	margin: 0
+}
+
+#lunaVote #like {
+	line-height: 25px
+}
+.nav .f-answer {
+	display:block;
+	width: 93px;
+	height:43px;
+	text-align: left;
+	position: absolute;
+	line-height:43px;
+	left:5px;
+	top:0px;
+}
+.nav .f-answer ins{ 
+	display: inline-block;
+	height: 34px;
+	width: 34px;
+	margin-right:3px;
+	background-size: 100% 100%;
+	vertical-align: middle;
+	cursor: pointer
+}
+.f-answer ins {
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/gift.png?v=222) 0 0 no-repeat
+}
+
+.nav .comments-btn ins {
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/comment.png) 0 0 no-repeat
+}
+
+.nav .vote-up ins {
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/f_up.png) 0 0 no-repeat
+}
+.nav .share { 
+	padding:0px 8px 0px 2px;
+}
+.nav .share ins {
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/share.png) 0 0 no-repeat
+}
+
+.nav .comments-btn ins,.nav .vote-up ins,.nav .share ins {
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	background-size: 100% 100%;
+	vertical-align: middle;
+	cursor: pointer
+}
+.vote-up ins{ 
+	margin-top:-3px;
+}
+.words-calendar-wrp {
+	width: 100%;
+	height: 2.4rem;
+	overflow: hidden;
+	color: #636365;
+	padding: 20px 15px
+}
+
+.btn-left,.btn-right,.words-slide {
+	float: left;
+	cursor: pointer
+}
+
+.btn-left,.btn-right {
+	width: 15%;
+	text-align: center;
+	height: 100%
+}
+
+.btn-left img,.btn-right img {
+	vertical-align: middle
+}
+
+.words-slide {
+	width: 70%;
+	overflow: hidden;
+	border: 1px solid #8c8a8b
+}
+
+.words-ul {
+	width: 10000px;
+	margin-left: 0;
+	transition: 1s;
+	-webkit-transition: 1s
+}
+
+.words-ul li {
+	width: 100%;
+	height: 100%;
+	padding: .1rem .05rem;
+	text-align: left;
+	font-size: .26rem;
+	float: left;
+	position: relative
+}
+
+.words-ul li i {
+	display: none
+}
+
+.words-ul li h2 {
+	font-size: .50rem;
+	color: #3e3e3e
+}
+
+.words-click {
+	display: inline-block;
+	width: .7rem;
+	height: .7rem;
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/words_click.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: .2rem;
+	right: .2rem;
+	cursor: pointer
+}
+
+.words-review,.subtitle {
+	padding: 15px;
+	font-size: .26rem;
+	color: #424243;
+	line-height: .36rem;
+	text-align: left
+}
+
+.subtitle {
+	overflow: hidden;
+	margin-bottom: 30px
+}
+
+.words-review h3 span,.subtitle h3 span {
+	display: none
+}
+
+.words-review h3 img,.subtitle h3 img {
+	width: 100%
+}
+
+
+.subtitle .more {
+	  padding: 0 .1rem;
+	  font-size: .24rem;
+	  line-height: .4rem;
+	  display: inline-block;
+	  float: right;
+	  color: #68b96c;
+	  cursor: pointer;
+
+}
+
+.ad {
+	display: block;
+	padding: 0 15px
+}
+
+#video-history {
+	color: #333134;
+	font-size: .26rem;
+	padding: 20px 15px;
+	overflow: hidden
+}
+
+.history-item {
+	float: left;
+	width: 31%;
+	margin-right: 2%;
+	overflow: hidden;
+	text-align: center;
+	line-height: 120%
+}
+
+.history-item img {
+	padding: 10px 0
+}
+
+.history-item span {
+	color: #333134
+}
+
+.host-intro {
+	color: #333134;
+	font-size: .26rem;
+	padding: 20px 15px;
+	overflow: hidden;
+	text-align: center
+}
+
+.host-intro .zhuchi {
+	height: 1.8rem
+}
+
+.host-intro .people {
+	display: inline-block;
+	width: 2.2rem
+}
+
+.host-intro .people img {
+	width: 1.2rem
+}
+
+.host-intro h3 {
+	text-align: left
+}
+
+.host-intro .des {
+	text-align: left;
+	margin-top: 10px;
+	line-height: .36rem
+}
+
+.xue-logo {
+	text-align: center
+}
+
+.xue-logo img {
+	width: 30%
+}
+
+.q-question,.q-false {
+	width: 70%;
+	margin: 0 auto;
+	padding: .4rem;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px rgba(221,221,221,0.65);
+	background-color: rgba(255,255,255,0.84);
+	text-align: center;
+	font-size: .28rem
+}
+
+.q-tit {
+	text-align: center;
+	font-weight: bold;
+	line-height: 1.3rem;
+	height: 1.3rem;
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/question.png) no-repeat;
+	background-size: 100% 100%;
+	color: #3e3e3e
+}
+
+.q-question li {
+	margin: 20px auto
+}
+
+.q-question li a {
+	display: block;
+	color: #5f5f5f;
+	border: 1px solid #52b059;
+	padding: 0 .6rem;
+	line-height: .8rem;
+	cursor: pointer;
+	width: 100%;
+	text-align: center
+}
+
+.q-question li a:hover {
+	background-color: #52b059;
+	color: #fff
+}
+
+.q-lesson,.rid {
+	display: none
+}
+
+.q-false {
+	display: none;
+	padding: 1rem .4rem
+}
+
+.q-false h4 a {
+	color: #52b059;
+	font-size: .26rem;
+	font-weight: normal
+}
+
+.q-false img {
+	margin-top: .5rem;
+	width: 40%
+}
+
+.q-false p {
+	font-weight: .22rem;
+	line-height: .4rem
+}
+
+.guaguaka {
+	padding: 0rem .4rem;
+	font-size: 14px;
+	color: #fff;
+	text-align: left
+}
+
+.rule-wrap {
+	color: #292a2b;
+	padding: .4rem;
+	font-size: 14px;
+	text-align: left
+}
+
+.card-wrp {
+	border: 5px #fff solid;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px rgba(221,221,221,0.65);
+	background-color: rgba(251,109,104,0.84);
+	position: relative
+}
+
+.card-hd {
+	width: 100%;
+	position: relative;
+	text-align: right;
+	font-size: .26rem
+}
+
+.card-hd img {
+	width: 100%;
+	margin-top: 10px
+}
+
+.card-hd .people-num {
+	display: inline-block;
+	padding-right: .8rem;
+	line-height: 130%
+}
+
+.card-hd .share {
+	display: block;
+	width: .8rem;
+	height: .8rem;
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/share_btn.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: -0.4rem;
+	right: -0.2rem;
+	margin: 0
+}
+
+.card-hd .congrats {
+	text-align: center;
+	padding: .2rem 0
+}
+
+.e-wrap {
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 40px;
+	overflow: hidden;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 100% 99%
+}
+
+.e-wrap img {
+	width: 100%
+}
+
+.e-wrap canvas {
+	z-index: 30;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.e-wrap p {
+	position: absolute;
+	color: #eb4642;
+	z-index: 20;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	font-size: .40rem
+}
+
+.rule-img {
+	width: 100%;
+	padding-bottom: 30px
+}
+
+.rule-img img {
+	display: inline-block;
+	width: 100%;
+	bottom: 0
+}
+
+.rule-img ul {
+	display: none
+}
+
+.dialog-wrp {
+	position: absolute;
+	width: 100%;
+	top: 1.6rem;
+	z-index: 60
+}
+
+.dialog {
+	width: 80%;
+	margin: 0 auto;
+	border-radius: .08rem;
+	background-color: #fff;
+	text-align: center;
+	color: #5a5a5a;
+	padding: .5rem 0 .2rem 0;
+	position: relative;
+	display: none;
+	overflow: hidden
+}
+
+.dialog img {
+	width: 50%
+}
+
+.dialog h2 {
+	color: #595959;
+	font-size: .32rem;
+	font-weight: 500;
+	line-height: .5rem
+}
+
+.dialog span {
+	color: #ff5418
+}
+
+.dialog h4 {
+	font-size: .3rem;
+	font-weight: normal;
+	line-height: .46rem
+}
+
+.dialog p {
+	font-size: .20rem;
+	line-height: .36rem;
+	color: #7c7c7c
+}
+
+.dialog .close {
+	width: .5rem;
+	height: .5rem;
+	position: absolute;
+	top: -0.03rem;
+	right: -0.03rem;
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/close.png) no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+	z-index: 70
+}
+
+.dynamicHtml {
+	padding: .5rem .3rem .8rem .3rem;
+	font-size: .22rem
+}
+
+.reminder {
+	display: none;
+	border-top: 1px solid #ddd;
+	margin: .2rem .2rem 0 .2rem;
+	padding: 10px 10px 0 10px;
+	text-align: left
+}
+
+.submit-info {
+	text-align: center;
+	display: block;
+	font-size: .24rem;
+	line-height: .56rem;
+	cursor: pointer;
+	padding: .5rem 0;
+	display: none
+}
+
+.submit-info span {
+	display: inline-block;
+	padding: 0 .5rem;
+	border-radius: 20px;
+	background-color: #ff5418;
+	color: #fff
+}
+
+.card-mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.7);
+	top: 0;
+	bottom: 0;
+	z-index: 40;
+	display: none
+}
+
+.back-btn {
+	display: inline-block;
+	margin-top: 40px;
+	padding: 0 .4rem;
+	border-radius: 5px;
+	line-height: .5rem;
+	background-color: #52b058;
+	color: #fff
+}
+
+.address,.success {
+	width: 80%;
+	margin: 0 auto;
+	padding: .4rem;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px rgba(221,221,221,0.65);
+	background-color: rgba(255,255,255,0.84)
+}
+
+.address h4 {
+	font-size: .22rem;
+	text-align: center;
+	font-weight: 500;
+	line-height: .5rem
+}
+
+.address li {
+	padding: .14rem .1rem;
+	margin: .3rem 0;
+	font-size: 14px;
+	border: 1px solid #52b058;
+	position: relative
+}
+
+.address input,.address textarea {
+	border: 0;
+	outline: 0;
+	background-color: rgba(0,0,0,0);
+	width: 75%
+}
+
+.address li i {
+	color: #989898;
+	vertical-align: top;
+	font-style: normal
+}
+
+.address textarea {
+	resize: none;
+	height: .9rem;
+	line-height: 22px
+}
+
+.address p {
+	font-size: .2rem;
+	line-height: .3rem
+}
+
+.address span {
+	color: #52b058
+}
+
+.address .subData {
+	display: block;
+	width: 90%;
+	font-size: .32rem;
+	line-height: .66rem;
+	color: #fff;
+	background-color: #52b058;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px
+}
+
+.success {
+	text-align: center;
+	padding: 1.5rem .2rem .4rem .2rem;
+	display: none;
+	font-size: .22rem
+}
+
+.success .reminder {
+	border-top: 1px solid #ddd;
+	margin-top: 1rem;
+	padding: 10px 5px 0 5px;
+	text-align: left;
+	font-size: .2rem;
+	display: block
+}
+
+.success h3 {
+	color: #28b125;
+	font-size: .33rem;
+	line-height: .56rem
+}}
+
+.lessonid {
+	display: none
+}
+
+form input[type="text"] {
+	display: none
+}
+
+.pframe {
+	display: none
+}
+
+html,body,.scene {
+	height: 100%;
+	width: 100%;
+	overflow: hidden
+}
+
+body {
+	-webkit-user-select: none;
+	user-select: none;
+	-ms-touch-action: none
+}
+
+.scene {
+	overflow-y: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none
+}
+
+.scene-in {
+	display: block
+}
+
+.scene-out {
+	display: block
+}
+
+.scene {
+	-webkit-animation: .35s ease-in-out;
+	animation: .35s ease-in-out
+}
+
+.scene-out {
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%)
+}
+
+.slide.scene-in {
+	-webkit-animation-name: slideInFromRight;
+	animation-name: slideInFromRight
+}
+
+.slide.scene-out {
+	-webkit-animation-name: slideOutToLeft;
+	animation-name: slideOutToLeft
+}
+
+.slide.reverse.scene-out {
+	-webkit-animation-name: slideOutToRight;
+	animation-name: slideOutToRight
+}
+
+.slide.reverse.scene-in {
+	-webkit-animation-name: slideInFromLeft;
+	animation-name: slideInFromLeft
+}
+
+@-webkit-keyframes slideInFromRight {
+	from {
+		-webkit-transform: translateX(100%)
+	}
+
+	to {
+		-webkit-transform: translateX(0)
+	}
+}
+
+@keyframes slideInFromRight {
+	from {
+		transform: translateX(100%)
+	}
+
+	to {
+		transform: translateX(0)
+	}
+}
+
+@-webkit-keyframes slideInFromLeft {
+	from {
+		-webkit-transform: translateX(-100%)
+	}
+
+	to {
+		-webkit-transform: translateX(0)
+	}
+}
+
+@keyframes slideInFromLeft {
+	from {
+		transform: translateX(-100%)
+	}
+
+	to {
+		transform: translateX(0)
+	}
+}
+
+@-webkit-keyframes slideOutToLeft {
+	from {
+		-webkit-transform: translateX(0)
+	}
+
+	to {
+		-webkit-transform: translateX(-100%)
+	}
+}
+
+@keyframes slideOutToLeft {
+	from {
+		transform: translateX(0)
+	}
+
+	to {
+		transform: translateX(-100%)
+	}
+}
+
+@-webkit-keyframes slideOutToRight {
+	from {
+		-webkit-transform: translateX(0)
+	}
+
+	to {
+		-webkit-transform: translateX(100%)
+	}
+}
+
+@keyframes slideOutToRight {
+	from {
+		transform: translateX(0)
+	}
+
+	to {
+		transform: translateX(100%)
+	}
+}
+
+#sharePanel {
+	background-color: rgba(0,0,0,0.6);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: left;
+	z-index: 999
+}
+
+.wrap {
+	left: 50%;
+	margin: -152px 0 0 -140px;
+	position: fixed;
+	top: 50%;
+	width: 280px;
+	overflow: inherit;
+	background-color: rgba(255,255,255,1);
+	border-radius: 5px;
+	color: #000;
+	padding: 30px 20px 30px 20px
+}
+
+#sharePanel .title {
+	font-size: 16px;
+	line-height: 36px;
+	color: #000;
+	border-bottom: 2px #eee solid
+}
+
+.share a {
+	display: block;
+	font-size: 14px;
+	line-height: 39px;
+	color: #000;
+	border-bottom: 2px #eee solid;
+	cursor: pointer
+}
+
+.share a i {
+	display: inline-block;
+	background: url(http://shared.ydstatic.com/xue/special/tea_test/images/share_icon.png) 0 0 no-repeat;
+	background-size: 100% auto;
+	width: 32px;
+	height: 32px;
+	margin: 2px 0;
+	vertical-align: middle
+}
+
+#sina i {
+	background-position: 0 -99px
+}
+
+#renren i {
+	background-position: 0 -1px
+}
+
+#weixin i {
+	background-position: 0 -32px
+}
+
+#yixin i {
+	background-position: 0 -64px
+}
+
+#cancel {
+	display: block;
+	margin: 20px 0 0 0;
+	border-bottom: 2px #bbb solid;
+	text-align: center;
+	color: #000;
+	font-size: 14px
+}
+
+#weixinTip {
+	width: 320px;
+	height: 124px;
+	margin: 0 auto;
+	background: url("http://shared.ydstatic.com/market/public/share/imgs/weixin-tip.png") 0 0 no-repeat;
+	background-size: 320px 106px;
+	display: none
+}
+
+#commentArea{ 
+	background-color: #fcf5e2;
+}
+#lunaComment{ 
+	background-color: #fff
+}
+#lunaComment #commentArea .submit{ 
+	background-color: #68b96c;
+	border-color: #fcf5e2;
+}
